@@ -1,5 +1,6 @@
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:studit/modules/home/home_page.dart';
 
@@ -29,7 +30,7 @@ class LoginController extends GetxController with StateMixin {
       change(null, status: RxStatus.success());
     } else {
       Get.snackbar('Alert',
-          'Somthing went wrong Enter an approved Email and correct password');
+          'Somthing went wrong Enter an approved Email and correct password',backgroundColor: Colors.red);
 
       change(null, status: RxStatus.error());
     }
